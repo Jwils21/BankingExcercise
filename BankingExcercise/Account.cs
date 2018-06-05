@@ -8,7 +8,7 @@ namespace BankingExcercise {
 	class Account {
 		public string AcctNbr { get; set; }
 		public string Owner { get; set; }
-		public decimal Balance { get; private set; }
+		public decimal Balance { get; protected set; }
 		public string Description { get; set; }
 
 		public void Deposit (decimal DepAmt) {
@@ -37,8 +37,5 @@ namespace BankingExcercise {
 			this.Balance = 0;
 		}
 
-		protected void CalcInt (decimal IntRate) {
-			Balance *= (1 + (IntRate / 12));
-		}
 	}
 }

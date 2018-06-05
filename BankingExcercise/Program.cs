@@ -25,7 +25,7 @@ namespace BankingExcercise {
 			Console.WriteLine($"The balance for {Chk1.Owner} is: {Chk1.GetBalance()}");
 			Console.WriteLine($"The balance for {Sav1.Owner} is: {Sav1.GetBalance()}");
 
-			Sav1.CalcInt();
+			Sav1.CalcInt(1);
 			Console.WriteLine($"The balance for {Sav1.Owner} is: {Sav1.GetBalance()}");
 
 			ChildChecking JonathanSon = new ChildChecking("789", "Jonathan's Sons Checking", Chk1) {
